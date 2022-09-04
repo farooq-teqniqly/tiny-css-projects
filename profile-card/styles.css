@@ -1,0 +1,42 @@
+body {
+  --primary: #de3c4b;
+  --primary-contrast: white;
+  --secondary: #717777;
+  --font: Helvetica, Arial, sans-serif;
+  --text-color: #2d3142;
+  --card-background: white;
+  --page-backgound: linear-gradient(#4f5d75, #2d3142);
+  --image-size: 200px;
+
+  background: var(--page-background);
+  font-family: var(--font);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+img {
+  width: var(--image-size);
+  height: var(--image-size);
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: calc(-1 * (var(--image-size) / 3));
+}
+
+.card {
+  background-color: var(--card-background);
+  box-shadow: 0px 0px 55px rgba(38, 40, 45, 0.75);
+  width: 75vw;
+  max-width: 500px;
+  border-radius: 4px;
+  text-align: center;
+  margin: calc((var(--image-size) / 3) + 24px);
+}
